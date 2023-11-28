@@ -1,0 +1,7 @@
+<p>dashoard works!</p>
+
+<div *ngIf="productList && productList.products">
+    <div *ngFor="let item of productList.products">
+        {{item.title}}, {{item.brand}}
+    </div>
+</div>

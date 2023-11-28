@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BlockchainApi</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    /* Style the header bar */
+    header {
+      background-color: #007BFF;
+      color: #fff;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Style the navigation buttons */
+    button {
+      background-color: #fff;
+      color: #007BFF;
+      border: none;
+      padding: 15px 0; /* Increase the button height for symmetry */
+      width: 50%; /* Each button covers 50% of the header */
+      cursor: pointer;
+    }
+    
+    button:first-child {
+      border-right: 1px solid #007BFF;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <!-- <header>
+    <button [routerLink]="['']" routerLinkActive="router-link-active">ERC-20</button>
+    <button [routerLink]="['/erc721']" routerLinkActive="router-link-active">ERC-721</button>
+  </header> -->
+  <app-root></app-root>
+</body>
+</html>

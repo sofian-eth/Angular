@@ -1,0 +1,13 @@
+
+<!-- <div *ngIf="productList && productList.products">
+    <div *ngFor="let item of productList.products">
+        {{item.todos}}
+    </div>
+</div> -->
+<input [(ngModel)]="inputText" type="number" (ngModelChange)="fetchData()"/>
+
+<div *ngFor="let item of productList">
+    <p>
+        {{item.id}} => {{item.todo}}
+    </p>
+</div>

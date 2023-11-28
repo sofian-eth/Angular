@@ -1,0 +1,25 @@
+<p>task3 works!</p>
+<div style="height: 400px;width: 400px;padding: 10px;background-color: pink;">
+    <h1>{{third}}</h1>
+</div>
+<div>
+    <label for="">first field</label>
+    <input [(ngModel)]="first" type="number">
+    <br>
+    
+    <label for="">second field</label>
+    <input [(ngModel)]="second" type="number">
+    <br>
+    
+    <!-- <label for="">test field</label>
+    <input [value]="first" type="number">
+    <br> -->
+
+    <button (click)="onSubmit()">Submit</button>
+
+<!-- 
+    <div *ngFor="let item of loop; let i = index">
+        <p>Hello world  {{item}}. Index : {{i}}</p>
+    </div> -->
+
+</div>

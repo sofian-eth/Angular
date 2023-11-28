@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@angular/router": "^16.2.9",
+    "ngx-spinner": "^16.0.2"
+  }
+}

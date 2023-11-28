@@ -1,0 +1,18 @@
+<p>task2 works!</p>
+<div style="height: 400px;width: 400px;padding: 10px;background-color: aquamarine;">
+    <div *ngIf="showTable">
+        <p *ngFor="let item of loop; let i = index">{{first}} x {{i+1}} =   {{ (first) * (i+1)}}
+            <!-- . Index : {{i}} -->
+        </p>
+    </div>
+</div>
+<div>
+    <label for="">first field</label>
+    <input [(ngModel)]="first" (ngModelChange)="showTable=false;" type="number">
+
+    <button (click)="onSubmit()">Submit</button>
+
+    <!-- <div *ngFor="let item of loop; let i = index">
+        <p>Hello world  {{item * first}}. Index : {{i}}</p>
+    </div> -->
+</div>

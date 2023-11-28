@@ -1,0 +1,23 @@
+<h2 id="myHeader">ERC-20 Project Launchpad</h2>
+<form [formGroup]="dataForm" (ngSubmit) = "onSubmit()">
+
+    <div>
+        <label for="name">Name: </label>
+        <input type="text" id="name" formControlName="name" />
+    </div>
+    <div>
+        <label for="symbol">Symbol: </label>
+        <input type="text" id="symbol" formControlName="symbol" />
+    </div>
+    <div>
+        <label for="decimals">Decimals: </label>
+        <input type="number" id="decimals" formControlName="decimals" />
+    </div>
+    <div>
+        <label for="supply">Supply: </label>
+        <input type="number" id="supply" formControlName="supply" />
+    </div>
+    <button type="submit" [disabled]="dataForm.invalid">Submit</button>
+</form>
+
+<ngx-ui-loader></ngx-ui-loader>
